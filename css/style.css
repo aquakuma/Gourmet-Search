@@ -1,21 +1,46 @@
+html {
+	overflow: auto;
+}
+body {
+	overflow: hidden;
+	min-width: 900px;
+}
+
+
+
 .bar_area{
+    
     max-width: 1200px;
     min-width: 600px;
     width: 80vw;
-    margin: 0 auto;
-    display: flex;
+    margin: 10px auto;
+    /*display: flex;*/
 }
 
 .search{
-    width:38vw;
-    max-width: 550px;
+    min-width: 600px;
+    max-width: 60vw;
     margin: 0 auto;
+}
+
+.search_area{
+    box-shadow:0px 0px 10px;
 }
 
 .local_search{
     margin: 0 auto;
-    width:38vw;
-    max-width: 550px;
+    min-width: 600px;
+    max-width: 60vw;
+    display:none;
+    box-shadow:0px 0px 10px;
+}
+
+
+.box{
+    max-width: 60vw;
+    min-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 
@@ -34,6 +59,7 @@
     width: 60vw;
     max-width: 1000px;
     min-height: 400px;
+    min-width: 400px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -45,12 +71,42 @@
     color: #666666;
     /*position:fixed;*/
     z-index: 2;
+
+    padding: 20px;
+}
+
+.content h3{
+    text-align: center;
 }
 
 .content img{
     object-fit: cover;
     width: 300px;
     height: 200px;
+    margin: 0 auto;
+}
+
+.detail_area{
+    margin-top: 20px;
+}
+
+.detail_table{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.td1{
+    width:10em;
+}
+
+.detail_table td {
+	background: rgb(199, 199, 199);
+    padding: 5px;
+}
+
+.detail_table tr:nth-child(odd) td {
+	background: #fff;
 }
 
 #place{
@@ -81,3 +137,78 @@
 .items{
     text-align: left;
 }
+
+.search li{
+    list-style-type: none;
+    display: inline-block;
+
+}
+
+.tag{
+
+    max-width: 1200px;
+    min-width: 600px;
+    width: 80vw;
+    min-height: 1em;
+    margin-bottom: -16px;
+}
+
+.tag_current{
+    box-shadow:0px 0px 10px;
+}
+
+.tag ul{
+    margin-left: -20px;
+}
+
+
+
+#tag1{
+    background-color: rgb(108, 235, 197);
+    padding: 10px;
+}
+
+#tag1:hover{
+    background-color: rgb(90, 212, 176);
+}
+
+
+#tag2{
+    background-color: rgb(104, 241, 145);
+    margin-left: -5px;
+    padding: 10px;
+}
+#tag2:hover{
+    background-color: rgb(85, 214, 123);
+}
+
+.center{
+    min-width: 30vw;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.btn-circle-stitch {
+    display: inline-block;
+    text-decoration: none;
+    background: #87befd;
+    color: #FFF;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0px 0px 0px 5px #87befd;
+    border: dashed 1px #FFF;
+    transition: .4s;
+    margin-top: 20px;
+  }
+  
+  .btn-circle-stitch:hover {
+    background: #668ad8;
+    box-shadow: 0px 0px 0px 5px #668ad8;
+    text-decoration: none;
+  }
+
