@@ -9,18 +9,32 @@
 .pagination .prev-page {
     display: inline-block;
 
-    
 }
 .pagination .next-page {
     display: inline-block;
-    margin-left: 20px;
+    margin-left: 25px;
+
 }
 .pagination .prev-page button {
-    
+    cursor: pointer; /* マウスカーソルを乗せると指になる */
+    outline: none;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(12, 200, 233, 0.2);
 
 }
-.pagination .next-page button {
+.pagination .prev-page button:hover {
+    background-color: rgba(11, 165, 192, 0.2);
+}
 
+.pagination .next-page button {
+    cursor: pointer; /* マウスカーソルを乗せると指になる */
+    outline: none;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgba(12, 200, 233, 0.2);
+}
+
+.pagination .next-page button:hover {
+    background-color: rgba(11, 165, 192, 0.2);
 }
  
 /* 前・次へ移動するボタンの無効化時 */
@@ -68,7 +82,7 @@
     
 }
 .pagination li.current  {
-    background-color: aqua;
+    background-color: rgb(216, 216, 216);
 }
 /* 省略記号 */
 .pagination li.ellipsis {}
