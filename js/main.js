@@ -105,7 +105,7 @@ function shopMap(locations) {
         marker_array.push(marker);
 
         var box = '<div class="map_item">' +
-            `<img src='${element['photo']['pc']['l']}'>` +
+            `<img src='${element['photo']['pc']['l']}' onclick='detail(${index})'>` +
             `<h3>${element['name']}</h3>` +
             `<h6>${element['genre']['name']}</h6>` +
             `<h5>${element['genre']['catch']}</h5>` +
@@ -545,6 +545,7 @@ function data_display(data){
                 td.textContent = data['shop'][i]['budget']['average'];
                 tr.appendChild(td);
                 table.appendChild(tr);
+
 
 
                 var tr = document.createElement("tr");
