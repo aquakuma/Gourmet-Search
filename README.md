@@ -21,6 +21,12 @@ Visual Studio Code
 ### 開発言語
 JavaScript、PHP
 
+### フレームワーク
+JQuery
+
+## 動作対象端末・OS
+### 動作対象 OS およびブラウザ
+Google Chrome、Firefox、Microsoft Edge
 
 ## アプリケーション機能
 
@@ -39,6 +45,13 @@ JavaScript、PHP
 ### 使用しているAPI,SDK,ライブラリなど
 - ホットペッパーグルメサーチAPI
 - Google Maps JavaScript API
+
+### デザイン面でこだわったポイント
+見やすくためにシンプルなデザインにしました。
+
 ### アドバイスして欲しいポイント
 全体的なデザイン、見やすくしたい。  
 追加した方がいい機能とか。
+
+### 自己評価
+この課題を機にGoogle Maps JavaScript APIを初めて使って、いい勉強になりました。制作時間は10時間くらいかかりました。
